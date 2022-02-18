@@ -1,0 +1,33 @@
+.container {
+  padding-bottom: 3rem;
+}
+
+#custom-grid {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
+}
+
+#custom-grid .custom-card {
+  padding: 1rem;
+  padding-left: 2rem;
+  color: #555;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  position: relative;
+}
+
+#custom-grid .custom-card .card-side-color {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+  background-color: #555;
+}
+/*# sourceMappingURL=custom.css.map */
